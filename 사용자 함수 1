@@ -1,0 +1,19 @@
+#include <iostream>
+int area(int a, int b);
+int main() 
+{
+  int width, heigh, answer;
+
+  printf("---- 직사각형 넓이를 계산해주는 프로그램 ---\n");
+  printf("가로 :");
+  scanf("%d", &width);
+  printf("세로 :");
+  scanf("%d", &heigh);
+
+  answer = area(width, heigh);
+  printf("\n\n 넓이 = %d \n\n", answer);
+  }
+int area(int a, int b)
+{
+  return a * b;
+}
